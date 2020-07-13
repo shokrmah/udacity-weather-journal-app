@@ -1,7 +1,7 @@
 /* Global Variables */
 let baseURL = 'http://api.openweathermap.org/data/2.5/weather?zip='
 let openWeatherApiKey = '&appid=d3c5afe31b7352e8daff388941151d1f';
-const proxyUrl = "https://cors-anywhere.herokuapp.com";
+//const proxyUrl = "https://cors-anywhere.herokuapp.com";
 
 const saveDataURL = 'http://localhost:3000/addWeatherJournal';
 
@@ -80,6 +80,7 @@ function getWeatherDataAndSave(){
 	if(zipTextInput.value.trim().length === 0 || feelingsTextArea.value.trim().length === 0)
 	{
 		console.log("empty");
+		alert("Please fill the data before submitting");
 		return;
 	}
 
